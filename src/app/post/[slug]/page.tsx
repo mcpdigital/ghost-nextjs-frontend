@@ -15,7 +15,7 @@ export default async function PostSlug({
 }: {
   params: { slug: string };
 }) {
-  const param = await params;
+  const param = params;
   const post = await getPost(param.slug);
   return (
     <>
